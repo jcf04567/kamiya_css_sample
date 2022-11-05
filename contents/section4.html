@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      レイアウトデザイン
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=M+PLUS+2&family=Oswald&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script>
+      //共通パーツ読み込み
+      $(function() {
+      $("#header").load("header.html");
+      $("#footer").load("footer.html");
+      });
+    </script>
+  </head>
+  <body>
+    <div class="global-container">
+      <div id="header"></div>
+      <div class="title">
+        <h1>4.レイアウトデザイン</h1>
+      </div>
+      <div class="container">
+        <!-- ここで作成-開始 -->
+
+        <!-- ここで作成-終了 -->
+        <div class="section4-1-1">
+          <h2>1-1.Flexboxレイアウト 横並び1行レイアウト</h2>
+          <div class="section4-1-1__layout">
+            <div class="item">
+              <img src="../images/img3.jpg" alt="">
+              <h3>横並び見出し</h3>
+              <p>横並びレイアウトをFlexboxで実装</p>
+            </div>
+            <div class="item">
+              <img src="../images/img4.jpg" alt="">
+              <h3>横並び見出し</h3>
+              <p>横並びレイアウトをFlexboxで実装</p>
+            </div>
+            <div class="item">
+              <img src="../images/img5.jpg" alt="">
+              <h3>横並び見出し</h3>
+              <p>横並びレイアウトをFlexboxで実装</p>
+            </div>
+          </div>
+        </div>
+        <div class="section4-1-1s">
+          <h2>1-1s.Flexboxレイアウト 横並び複数行レイアウト 画像のサイズも合わせる</h2>
+          <div class="section4-1-1s__layout">
+            <div class="item">
+              <div class="wrap">
+                <img src="../images/img3.jpg" alt="">
+              </div>
+              <h3>横並び見出し</h3>
+              <p>横並びレイアウトをFlexboxで実装</p>
+            </div>
+            <div class="item">
+              <div class="wrap">
+                <img src="../images/img4.jpg" alt="">
+              </div>
+              <h3>横並び見出し</h3>
+              <p>横並びレイアウトをFlexboxで実装</p>
+            </div>
+            <div class="item">
+              <div class="wrap">
+                <img src="../images/img5.jpg" alt="">
+              </div>
+              <h3>横並び見出し</h3>
+              <p>横並びレイアウトをFlexboxで実装</p>
+            </div>
+          </div>
+          <p>画像の大きさを変更しなくても同じサイズで画像を設定できる。でも、高さが固定だから、あんまり意味なし。</p>
+        </div>
+        <div class="section4-1-2">
+          <h2>1-2.Flexboxレイアウト 横並び複数行レイアウト</h2>
+          <div class="section4-1-2__layout">
+            <div class="item">
+              <img src="../images/img3.jpg" alt="">
+              <h3>横並び見出し</h3>
+              <p>横並びレイアウトをFlexboxで実装</p>
+            </div>
+            <div class="item">
+              <img src="../images/img4.jpg" alt="">
+              <h3>横並び見出し</h3>
+              <p>横並びレイアウトをFlexboxで実装</p>
+            </div>
+            <div class="item">
+              <img src="../images/img5.jpg" alt="">
+              <h3>横並び見出し</h3>
+              <p>横並びレイアウトをFlexboxで実装</p>
+            </div>
+            <div class="item">
+              <img src="../images/img6.jpg" alt="">
+              <h3>横並び見出し</h3>
+              <p>横並びレイアウトをFlexboxで実装</p>
+            </div>
+            <div class="item">
+              <img src="../images/img7.jpg" alt="">
+              <h3>横並び見出し</h3>
+              <p>横並びレイアウトをFlexboxで実装</p>
+            </div>
+            <div class="item">
+              <img src="../images/img8.jpg" alt="">
+              <h3>横並び見出し</h3>
+              <p>横並びレイアウトをFlexboxで実装</p>
+            </div>
+          </div>
+          <p>nth-childで計算してギャップを設定している</p>
+        </div>
+        <div class="section4-1-3">
+          <h2>1-3.グローバルナビゲーション</h2>
+          <div class="section4-1-3__layout">
+            <ul>
+              <li><a href="#"><span>Top</span>トップページ</a></li>
+              <li><a href="#"><span>Profile</span>プロフィール</a></li>
+              <li><a href="#"><span>Skill</span>スキル</a></li>
+              <li><a href="#"><span>Contact</span>お問い合わせ</a></li>
+            </ul>
+            <p>参考書通り。ブラウザを狭くすると、ナビゲーションが欠けてゆく。</p>
+          </div>
+        </div>
+        <div class="section4-1-3s">
+          <h2>1-3s.グローバルナビゲーション</h2>
+          <header class="section4-1-3s__layout">
+            <ul>
+              <li><a href="#"><span>Top</span>トップページ</a></li>
+              <li><a href="#"><span>Profile</span>プロフィール</a></li>
+              <li><a href="#"><span>Skill</span>スキル</a></li>
+              <li><a href="#"><span>Contact</span>お問い合わせ</a></li>
+            </ul>
+          </header>
+          <p>神谷オリジナル。ブラウザを狭くすると、それによってナビゲーションも縮む。</p>
+        </div>
+        <header class="section4-1-4">
+          <h2>1-4.ヘッダーレイアウト</h2>
+          <div class="section4-1-4__layout">
+            <div class="logo">
+              <img src="../images/office-goendo_logo.png" alt="" srcset="">
+            </div>
+            <ul>
+              <li><a href="#"><span>Top</span>トップページ</a></li>
+              <li><a href="#"><span>Profile</span>プロフィール</a></li>
+              <li><a href="#"><span>Contact</span>お問い合わせ</a></li>
+            </ul>
+          </div>
+        </header>
+        <header class="section4-1-5">
+          <h2>1-5.ヘッダーレイアウト</h2>
+          <div class="section4-1-5__layout">
+            <ol>
+              <li><a href="#">トップ</a></li>
+              <li><a href="#">プロフィール</a></li>
+              <li><a href="#">プログラマー時代</a></li>
+            </ol>
+          </div>
+          <p>liの:afterの「●」が大きさを変更すると真ん中に来ないことがある。「●」の大きさを変えると、前後の文字の上下も狂うことがある。
+          </p>
+        </header>
+        <div class="section4-1-6">
+          <h2>1-6.ページネーション</h2>
+          <div class="section4-1-6__layout">
+            <ol>
+              <li><a href="#">前へ</a></li>
+              <li><span>1</span></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li>...</li>
+              <li><a href="#">次へ</a></li>
+            </ol>
+          </div>
+        </div>
+        <div class="section4-1-7">
+          <h2>1-7.横並びコンテンツの上下中央配置</h2>
+          <div class="section4-1-7__layout">
+            <section class="image">
+              <img src="../images/img6.jpg" alt="" srcset="">
+            </section>
+            <section class="text">
+              <h2>上下中央に配置します</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia blanditiis dolore quam ut harum aliquid expedita similique in minima omnis ducimus culpa illum, labore perferendis possimus dolorum excepturi laboriosam vitae?</p>
+            </section>
+          </div>
+        </div>
+        <div class="section4-1-7s">
+          <h2>1-7s.横並びコンテンツの上下中央配置</h2>
+          <div class="section4-1-7s__layout">
+            <section class="image">
+              <img src="../images/img6.jpg" alt="" srcset="">
+            </section>
+            <section class="text">
+              <h2>上下中央に配置します</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia blanditiis dolore quam ut harum aliquid expedita similique in minima omnis ducimus culpa illum, labore perferendis possimus dolorum excepturi laboriosam vitae?</p>
+            </section>
+          </div>
+          <p>神谷オリジナル</p>
+        </div>
+        <div class="section4-1-8">
+          <h2>1-8.横並びコンテンツの偶数番目のレイアウト変更</h2>
+          <div class="section4-1-8__layout">
+            <section class="image">
+              <img src="../images/img6.jpg" alt="" srcset="">
+            </section>
+            <section class="text">
+              <h2>上下中央に配置します</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia blanditiis dolore quam ut harum aliquid expedita similique in minima omnis ducimus culpa illum, labore perferendis possimus dolorum excepturi laboriosam vitae?</p>
+            </section>
+          </div>
+          <div class="section4-1-8__layout">
+            <section class="image">
+              <img src="../images/img7.jpg" alt="" srcset="">
+            </section>
+            <section class="text">
+              <h2>上下中央に配置します</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia blanditiis dolore quam ut harum aliquid expedita similique in minima omnis ducimus culpa illum, labore perferendis possimus dolorum excepturi laboriosam vitae?</p>
+            </section>
+
+          </div>
+        </div>
+        <div class="section4-1-8s">
+          <h2>1-8s.横並びコンテンツの偶数番目のレイアウト変更</h2>
+          <div class="section4-1-8s__layout">
+            <section class="image">
+              <img src="../images/img6.jpg" alt="" srcset="">
+            </section>
+            <section class="text">
+              <h2>上下中央に配置します</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia blanditiis dolore quam ut harum aliquid expedita similique in minima omnis ducimus culpa illum, labore perferendis possimus dolorum excepturi laboriosam vitae?</p>
+            </section>
+          </div>
+          <div class="section4-1-8s__layout">
+            <section class="image">
+              <img src="../images/img7.jpg" alt="" srcset="">
+            </section>
+            <section class="text">
+              <h2>上下中央に配置します</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia blanditiis dolore quam ut harum aliquid expedita similique in minima omnis ducimus culpa illum, labore perferendis possimus dolorum excepturi laboriosam vitae?</p>
+            </section>
+
+          </div>
+          <p>神谷オリジナル</p>
+        </div>
+        <div class="section4-1-9">
+          <h2>1-9.フォームレイアウト</h2>
+          <div class="section4-1-9__layout">
+            <form action="" method="post" name="" onsubmit="">
+              <label for="">
+                <span class="title">お名前
+                  <span class="required">必須</span>
+                </span>
+                <input type="text" name="name" id="" required>
+              </label>
+              <label for="">
+                <span class="title">メールアドレス
+                  <span class="required">必須</span>
+                </span>
+                <input type="e-mail" name="e-mail" id="" required>
+              </label>
+              <label for="">
+                <span class="title">
+                  電話番号
+                </span>
+                <input type="tel" name="tel" id="">
+              </label>
+              <label for="">
+                <span class="title-textarea">
+                  お問い合わせ内容
+                  <span class="required">必須</span>
+                </span>
+                <textarea name="contact" id="" required></textarea>
+              </label>
+              <br>
+              <button type="submit">送信</button>
+            </form>
+          </div>
+        </div>
+        <div class="section4-1-10">
+          <h2>1-10.定義リストレイアウト</h2>
+          <div class="section4-1-10__layout">
+            <dl>
+              <dt>会社名</dt>
+              <dd>オフィスご縁堂</dd>
+            </dl>
+            <dl>
+              <dt>
+                本社住所
+              </dt>
+              <dd>
+                東京のどこか
+              </dd>
+            </dl>
+            <dl>
+              <dt>電話番号</dt>
+              <dd>000-1111-2222</dd>
+            </dl>
+          </div>
+        </div>
+        <div class="section4-1-11">
+          <h2>1-11.カードレイアウトのボタンのみ下部揃えに配置</h2>
+          <div class="section4-1-11__layout">
+            <div class="item">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+              <a href="#">位置を揃えたいボタン</a>
+            </div>
+            <div class="item">
+              <p>Unde blanditiis, delectus voluptates necessitatibus illo ullam animi repellendus enim nulla tempora, voluptate soluta itaque quaerat esse laudantium veritatis optio? Ex, fugiat!</p>
+              <a href="#">位置を揃えたいボタン</a>
+            </div>
+          </div>
+        </div>
+        <div class="section4-1-11s">
+          <h2>1-11s.カードレイアウトのボタンのみ下部揃えに配置</h2>
+          <div class="section4-1-11s__layout">
+            <div class="item">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+              <a href="#">位置を揃えたいボタン</a>
+            </div>
+            <div class="item">
+              <p>Unde blanditiis, delectus voluptates necessitatibus illo ullam animi repellendus enim nulla tempora, voluptate soluta itaque quaerat esse laudantium veritatis optio? Ex, fugiat!</p>
+              <a href="#">位置を揃えたいボタン</a>
+            </div>
+          </div>
+          <p>神谷オリジナル</p>
+        </div>
+        <div class="section4-3">
+          <h2>3.Pinterest風カードレイアウト</h2>
+          <div class="section4-3__layout">
+            <ul>
+              <li>
+                <img src="../images/1258907.jpg" alt="" srcset="">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur unde maxime nemo blanditiis? Maxime enim molestias praesentium recusandae, incidunt alias excepturi odio repellat fugit eos cupiditate nostrum exercitationem corrupti est.</p>
+              </li>
+              <li>
+                <img src="../images/087372.jpg" alt="" srcset="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, reprehenderit, iure nemo saepe sunt velit nihil omnis voluptate mollitia at ab porro modi dicta voluptas quo nulla, ad cum! Quas!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus eligendi sed minus expedita iure suscipit, at ipsa, adipisci similique labore qui ullam maxime consequuntur tempora. Nesciunt quis vitae culpa rerum.</p>
+              </li>
+              <li>
+                <img src="../images/1385233.jpg" alt="" srcset="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </li>
+              <li>
+                <img src="../images/TV-kun01.jpg" alt="" srcset="">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat officiis quibusdam, culpa eius, aliquid libero omnis asperiores necessitatibus debitis ea consequatur dolores cum in ad quas vel cupiditate inventore soluta.</p>
+              </li>
+              <li>
+                <img src="../images/back.jpg" alt="" srcset="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos suscipit ea officia, hic quibusdam adipisci, mollitia reiciendis at quidem id dolores maxime consequuntur iure nobis quam rerum aliquid voluptatem accusantium.</p>
+              </li>
+              <li>
+                <img src="../images/weight_03.jpg" alt="" srcset="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="section4-4">
+          <h2>4.モダンな上下左右中央配置</h2>
+          <div class="section4-4__layout">
+            <div class="flexbox">
+              <img src="../images/flex.jpg" alt="" srcset="">
+            </div>
+            <div class="grid">
+              <img src="../images/grid.jpg" alt="" srcset="">
+            </div>
+          </div>
+        </div>
+        <div class="section4-5">
+          <h2>5.簡易カルーセルスライダー</h2>
+          <div class="section4-5__layout">
+            <div class="item">
+              <img src="../images/img3.jpg" alt="">
+              <p>SUN</p>
+            </div>
+            <div class="item">
+              <img src="../images/img4.jpg" alt="">
+              <p>MON</p>
+            </div>
+            <div class="item">
+              <img src="../images/img5.jpg" alt="">
+              <p>TUE</p>
+            </div>
+          </div>
+        </div>
+        <div class="section4-6">
+          <h2>6.簡易アコーディオン</h2>
+          <div class="section4-6__layout">
+            <details>
+              <summary>アコーディオンをHTMLだけで実装できますか？</summary>
+              <div class="answer">
+                <p>はい！簡易的なアコーディオンであればdetailsとsummaryのタグを使って実装できます。
+                </p>
+              </div>
+            </details>
+            <details>
+              <summary>アコーディオンをHTMLだけで実装できますか？</summary>
+              <div class="answer">
+                <p>はい！簡易的なアコーディオンであればdetailsとsummaryのタグを使って実装できます。
+                </p>
+              </div>
+            </details>
+            <details>
+              <summary>アコーディオンをHTMLだけで実装できますか？</summary>
+              <div class="answer">
+                <p>はい！簡易的なアコーディオンであればdetailsとsummaryのタグを使って実装できます。
+                </p>
+              </div>
+            </details>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+
+    <script src="../js/main.js"></script>
+  </body>
+</html>

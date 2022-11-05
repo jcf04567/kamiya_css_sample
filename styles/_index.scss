@@ -1,0 +1,37 @@
+.inview {
+  display: inline-block;
+  position: relative;
+  vertical-align:bottom;
+  overflow: hidden;
+  z-index: 1;
+  &.appear::before {
+    transform: none;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(
+      rgba(0 0 0 / 0) 70%,
+      pink 70%
+      );
+    transform: translateX(-100%);
+    // transition: all 1s 0.5s ease;
+    pointer-events: none;
+    z-index: -1;
+  }
+}
+
+@for $i from 1 through 4 {
+  .section#{$i}.inview {
+    &::before {
+      transition: transform 1s #{0.5 * $i}s ease;
+    }
+
+  }
+
+}
+
