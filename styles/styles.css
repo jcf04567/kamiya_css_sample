@@ -99,6 +99,9 @@ footer {
   pointer-events: none;
   z-index: -1;
 }
+.inview a {
+  cursor: pointer;
+}
 
 /* ページ参照時にタイトルにラインマーカーが時間差で引かれるためのCSS。セクションが増えるごとにループを追加する。 */
 .section1.inview::before {
@@ -2104,7 +2107,7 @@ footer {
   transform: rotateX(-90deg);
 }
 
-.section5, .omake, .section5-cover {
+.section5_unit, .omake, .section5-cover {
   text-align: center;
   background-color: lightgray;
   margin-bottom: 10px;

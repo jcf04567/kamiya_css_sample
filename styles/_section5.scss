@@ -9,7 +9,7 @@ $section4-color: Turquoise;
 $section4-1-color: rgb(21, 152, 139);
 
 
-.section5 {
+.section5_unit {
   text-align: center;
   background-color: lightgray;
   margin-bottom: 10px
@@ -17,7 +17,7 @@ $section4-1-color: rgb(21, 152, 139);
 }
 
 .section5-cover {
-  @extend.section5;
+  @extend.section5_unit;
   position: relative;
   z-index: 1;
 }
@@ -51,7 +51,7 @@ $section4-1-color: rgb(21, 152, 139);
 }
 
 .omake {
-  @extend.section5;
+  @extend.section5_unit;
   padding-bottom: 20px;
 }
 .rect {

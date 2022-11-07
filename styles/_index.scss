@@ -23,6 +23,9 @@
     pointer-events: none;
     z-index: -1;
   }
+  & a {
+    cursor: pointer;
+  }
 }
 
 /* ページ参照時にタイトルにラインマーカーが時間差で引かれるためのCSS。セクションが増えるごとにループを追加する。 */
