@@ -1,0 +1,20 @@
+@charset 'utf-8';
+
+@mixin b-base(
+  $bgc: $cWhite,
+  $color: $cBlack,
+  $margin: 20px auto,
+  $padding: 10px 50px,
+  $font-size: 18px,
+  $font-weight: 600,
+  $border: 1px $cBlack solid
+) {
+  background-color: $bgc;
+  color: $color;
+  margin: $margin;
+  padding: $padding;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  border: $border;
+  cursor: pointer;
+}

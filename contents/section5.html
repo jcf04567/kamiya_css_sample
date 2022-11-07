@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      ボタンデザイン
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=M+PLUS+2&family=Oswald&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script>
+      //共通パーツ読み込み
+      $(function() {
+      $("#header").load("header.html");
+      $("#footer").load("footer.html");
+      });
+    </script>
+  </head>
+  <body>
+    <div class="global-container">
+      <div id="header"></div>
+      <div class="title">
+        <h1>5.ボタンデザイン</h1>
+      </div>
+      <div class="container">
+        <!-- ここで作成-開始 -->
+        <!-- ここで作成-終了 -->
+        <div class="section5">
+          <h2>1.ホバーで飛び出て影ができるボタン</h2>
+            <button class="btn float">Button</button>
+        </div>
+        <div class="section5">
+          <h2>2.ホバーで影ができるボタン Part2</h2>
+          <button class="btn float contrast">Button</button>
+        </div>
+        <div class="section5">
+          <h2>3.ホバーで広がるボタン</h2>
+          <button class="btn wide contrast">Button</button>
+        </div>
+        <div class="section5">
+          <h2>4.押せるボタン</h2>
+          <button class="btn btn5 push">Button</button>
+        </div>
+        <div class="section5-cover">
+          <h2>5.背景色がスライドするボタン</h2>
+          <button class="btn6 slide-bg">Button</button>
+        </div>
+        <div class="section5-cover">
+          <h2>6.3Dボタン</h2>
+          <button class="btn7 cover-3d">
+            <span>Button</span>
+          </button>
+        </div>
+        <div class="section5-cover">
+          <h2>7.3Dボタン その２</h2>
+          <a class="btn8 cubic" href="">
+            <span class="hovering">ほばーやで～ </span>
+            <span class="default">Button</span>
+          </a>
+        </div>
+        <div class="omake">
+          <h2>おまけ.棒よ立ち上がれ</h2>
+          <div class="rect"></div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+
+    <script src="../js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,99 @@
+@charset 'utf-8';
+@use "./common";
+
+@import './section5_parts/mixin';
+@import './section5_parts/variables';
+@import './section5_parts/effect-class';
+
+$section4-color: Turquoise;
+$section4-1-color: rgb(21, 152, 139);
+
+
+.section5 {
+  text-align: center;
+  background-color: lightgray;
+  margin-bottom: 10px
+
+}
+
+.section5-cover {
+  @extend.section5;
+  position: relative;
+  z-index: 1;
+}
+
+
+
+.btn {
+  @include b-base();
+  transition: all .3s ease;
+}
+
+.s02 {
+  text-align: center;
+}
+
+.btn5 {
+  border-radius: 5px;
+  box-shadow: 2px 2px 0 0 rgba(0,0,0,1);
+  transform: translate(-3px,-3px);
+  transition: all .3s ease;
+}
+
+.btn6 {
+  // @include b-base($bgc:transparent);
+  @include b-base();
+}
+
+.btn7 {
+  // @include b-base($bgc:transparent);
+  @include b-base();
+}
+
+.omake {
+  @extend.section5;
+  padding-bottom: 20px;
+}
+.rect {
+  width: 200px;
+  height: 10px;
+  margin: 0 auto 10px;
+  padding-bottom: 10px;
+  background-color: $cOrange;
+  transform-origin: top left;
+  transition: transform 1s ease;
+  &:hover {
+    transform: skewY(-30deg);
+  }
+}
+
+.btn8 {
+  @include b-base($margin:0 auto,$border: none,$padding:0,$bgc:transparent,$color:transparent);
+  display: inline-block;
+  position: relative;
+  width: 150px;
+  height: 50px;
+  transform-style: preserve-3d;
+  perspective: 300px;
+  margin-bottom: 10px;
+}
+
+
+.png-kage {
+  text-align: center;
+  & .earth {
+    & img {
+      display: inline-block;
+      margin-right: 30px;
+      margin-bottom: 20px;
+
+      &.earth-bs {
+        box-shadow: 5px 5px 5px rgba(0,0,0,0.6);
+      }
+      &.earth-ft {
+        filter: drop-shadow(0px 0px 10px rgba(0,0,0,.8));
+      }
+    }
+  }
+}
+
