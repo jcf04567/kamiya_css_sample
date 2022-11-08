@@ -124,6 +124,10 @@ footer {
   transition: transform 1s 1s ease;
 }
 
+.section6.inview::before {
+  transition: transform 1s 1.2s ease;
+}
+
 .subunit1, .section1-11, .section1-10, .section1-9-5, .section1-9-4, .section1-9-3, .section1-9-2, .section1-9, .section1-8, .section1-7, .section1-6, .section1-5, .section1-4, .section1-3-2, .section1-3, .section1-2, .section1-1 {
   text-align: center;
   background-color: lightgray;
@@ -2211,4 +2215,90 @@ footer {
 }
 .png-kage .earth img.earth-ft {
   filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.8));
+}
+
+.appear.up .item {
+  transform: translateY(6px);
+}
+
+.appear.down .item {
+  transform: translateY(-6px);
+}
+
+.appear.left .item {
+  transform: translateX(40px);
+}
+
+.appear.right .item {
+  transform: translateX(-40px);
+}
+
+.appear .item {
+  transition: all 0.8s;
+  opacity: 0;
+}
+.appear.inview .item {
+  opacity: 1;
+  transform: none;
+}
+.appear.inview .item:nth-child(1) {
+  transition-delay: 0.1s;
+}
+.appear.inview .item:nth-child(2) {
+  transition-delay: 0.2s;
+}
+.appear.inview .item:nth-child(3) {
+  transition-delay: 0.3s;
+}
+.appear.inview .item:nth-child(4) {
+  transition-delay: 0.4s;
+}
+.appear.inview .item:nth-child(5) {
+  transition-delay: 0.5s;
+}
+.appear.inview .item:nth-child(6) {
+  transition-delay: 0.6s;
+}
+.appear.inview .item:nth-child(7) {
+  transition-delay: 0.7s;
+}
+.appear.inview .item:nth-child(8) {
+  transition-delay: 0.8s;
+}
+
+.section6_container {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  background-color: skyblue;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.section6_container .directions {
+  width: 400px;
+  height: 150px;
+  margin: 0 auto;
+  padding-top: 10px;
+  border: 2px solid #000;
+  border-radius: 10px;
+}
+.section6_container .directions p {
+  text-align: center;
+}
+.section6_container .directions select, .section6_container .directions input {
+  display: block;
+  margin: 0 auto 10px;
+  padding: 5px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.section6_container .appear_btn, .section6_container .appear {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.section6_container .appear_btn > button {
+  padding: 5px 20px;
+  border-radius: 8px;
+  cursor: pointer;
 }/*# sourceMappingURL=styles.css.map */

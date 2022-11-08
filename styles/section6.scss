@@ -1,0 +1,50 @@
+@use "./common";
+@import './section6_parts/appear';
+
+ul {
+  list-style: none;
+  & a {
+    text-decoration: none;
+  }
+}
+
+.section6_container {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  background-color: skyblue;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  & .directions {
+    width: 400px;
+    height: 150px;
+    margin: 0 auto;
+    padding-top: 10px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    & p {
+      text-align: center;
+    }
+    & select ,
+    & input {
+      display: block;
+      margin: 0 auto 10px;
+      padding: 5px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+  }
+  & .appear_btn , .appear {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  & .appear_btn > button {
+    padding: 5px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+}
+
+
+
