@@ -29,7 +29,7 @@
 }
 
 /* ページ参照時にタイトルにラインマーカーが時間差で引かれるためのCSS。セクションが増えるごとにループを追加する。 */
-@for $i from 1 through 6 {
+@for $i from 1 through 7 {
   .section#{$i}.inview {
     &::before {
       transition: transform 1s #{0.2 * $i}s ease;
