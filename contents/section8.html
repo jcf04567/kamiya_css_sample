@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Text Animation
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=M+PLUS+2&family=Oswald&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="../styles/section8.css" />
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script>
+      //共通パーツ読み込み
+      $(function() {
+      $("#header").load("header.html");
+      $("#footer").load("footer.html");
+      });
+    </script>
+  </head>
+  <body>
+    <div id="header"></div>
+    <div id="global-container">
+      <div id="container">
+        <div class="mobile-menu__cover"></div>
+        <header class="header">
+          <button class="mobile-menu__btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </header>
+      </div>
+      <nav class="mobile-menu">
+        <ul class="mobile-menu__main">
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="#">
+              <span class="main-title">Top</span>
+              <span class="sub-title">トップページ</span>
+            </a>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#">
+                <span class="main-title">Profile</span>
+                <span class="sub-title">自己紹介</span>
+              </a>
+            </li>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="#">
+              <span class="main-title">Contact Us</span>
+              <span class="sub-title">お問い合わせ</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div id="footer"></div>
+      <script src="../js/mobile-menu/mobile-menu.js"></script>
+  </body>
+</html>
