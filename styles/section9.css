@@ -1,0 +1,163 @@
+body {
+  font-family: "Oswald", "M PLUS 2", sans-serif;
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: 900;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-left: 30px;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 600;
+  padding: 20px 30px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 10px 20px;
+}
+
+.global-header {
+  font-size: 12px;
+  font-weight: bold;
+  background-color: aqua;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.global-header ul {
+  display: flex;
+  justify-content: right;
+}
+.global-header ul li {
+  margin: 10px;
+}
+
+footer {
+  text-align: center;
+  padding-bottom: 20px;
+  font-size: 24px;
+}
+
+.global-container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  height: auto;
+  background-color: skyblue;
+}
+
+.title {
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 80%;
+  text-align: center;
+}
+
+.container {
+  width: 80%;
+  height: auto;
+  margin: 20px auto;
+}
+
+.img-show {
+  margin: 0 auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: relative;
+  transform: translateY(-30px);
+}
+
+.pace-done #global-container {
+  opacity: 1;
+  transition: opacity 1s;
+  visibility: visible;
+}
+
+#global-container {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.pace {
+  z-index: 2000;
+  position: fixed;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100px;
+  height: 100px;
+}
+
+.pace .pace-progress {
+  transform: none !important;
+  text-align: center;
+}
+
+.pace .pace-progress:after {
+  content: attr(data-progress-text);
+  display: block;
+  font-weight: 100;
+  font-size: 2em;
+  font-family: "Helvetica Neue", "Yu Gothic", "Meiryo", sans-serif;
+  color: #535353;
+}
+
+.pace.pace-inactive {
+  display: none;
+}
+
+.pace-progress-inner {
+  width: 40px;
+  height: 40px;
+  background-color: #904669;
+  margin: 0 auto;
+  -webkit-animation-name: sk-rotateplane;
+          animation-name: sk-rotateplane;
+  -webkit-animation-duration: 1.2s;
+          animation-duration: 1.2s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes sk-rotateplane {
+  0% {
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+  }
+  50% {
+    transform: perspective(120px) rotateX(-180deg) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(120px) rotateX(-180deg) rotateY(-180deg);
+  }
+}
+
+@keyframes sk-rotateplane {
+  0% {
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+  }
+  50% {
+    transform: perspective(120px) rotateX(-180deg) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(120px) rotateX(-180deg) rotateY(-180deg);
+  }
+}/*# sourceMappingURL=section9.css.map */
