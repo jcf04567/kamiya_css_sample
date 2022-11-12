@@ -6,7 +6,6 @@ function movement(){
       select_movement = move[i].value;
     }
   }
-  console.log(select_movement);
   const now_movement = document.querySelector('#movement');
   if (now_movement.classList.contains('up')){
     now_movement.classList.remove('up');
