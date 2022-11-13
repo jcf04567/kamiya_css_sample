@@ -1,6 +1,6 @@
-function movement(){
+function movement(event){
   let select_movement;
-  const move = document.querySelector('#move');
+  const move = event.target.eventParm;
   for (let i = 0; i < move.length; i++) {
     if (move[i].selected){
       select_movement = move[i].value;
