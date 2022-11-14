@@ -27,9 +27,6 @@ h3 {
   font-size: 12px;
   font-weight: bold;
   background-color: aqua;
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
 }
 .global-header ul {
   display: flex;
