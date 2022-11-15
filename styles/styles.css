@@ -147,6 +147,10 @@ footer {
   transition: transform 1s 2s ease;
 }
 
+.section11.inview::before {
+  transition: transform 1s 2.2s ease;
+}
+
 .subunit1, .section1-11, .section1-10, .section1-9-5, .section1-9-4, .section1-9-3, .section1-9-2, .section1-9, .section1-8, .section1-7, .section1-6, .section1-5, .section1-4, .section1-3-2, .section1-3, .section1-2, .section1-1 {
   text-align: center;
   background-color: lightgray;
