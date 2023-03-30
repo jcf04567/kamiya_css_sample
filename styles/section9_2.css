@@ -66,7 +66,6 @@ footer {
 
 .img-show {
   margin: 0 auto;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   position: relative;
@@ -89,8 +88,7 @@ footer {
   pointer-events: none;
   -webkit-user-select: none;
   -moz-user-select: none;
-  -ms-user-select: none;
-      user-select: none;
+  user-select: none;
   -ms-perspective: 12rem;
   -o-perspective: 12rem;
   perspective: 12rem;
@@ -126,7 +124,6 @@ footer {
   font-family: "Helvetica Neue", sans-serif;
   font-weight: 100;
   text-align: center;
-  -webkit-animation: pace-theme-center-circle-spin linear infinite 2s;
   animation: pace-theme-center-circle-spin linear infinite 2s;
   transform-style: preserve-3d;
 }
@@ -134,15 +131,6 @@ footer {
 .pace .pace-progress:after {
   content: attr(data-progress-text);
   display: block;
-}
-
-@-webkit-keyframes pace-theme-center-circle-spin {
-  from {
-    -webkit-transform: rotateY(0deg);
-  }
-  to {
-    -webkit-transform: rotateY(360deg);
-  }
 }
 @keyframes pace-theme-center-circle-spin {
   from {

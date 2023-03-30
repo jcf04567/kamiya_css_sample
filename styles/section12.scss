@@ -1,0 +1,38 @@
+@use "./common" as *;
+
+.type_writer_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-size: 4em;
+  font-weight: 600;
+  background-color: black;
+  color: white;
+
+  & .typing {
+    // background-color: blue;
+    overflow: hidden;
+    width: 20ch;
+    white-space: nowrap;
+    letter-spacing: 0.132em;
+    animation: kf-typing 3.0s steps(20)
+              ,kf-sparkling .5s step-end 7 forwards;
+    border-right: 3px solid #fff;
+  }
+}
+
+@keyframes kf-typing {
+  0% {
+    width: 0;
+  }
+}
+
+@keyframes kf-sparkling {
+  50% {
+    border-right-color: transparent;
+  }
+  100% {
+    border-right-color: transparent;
+  }
+}

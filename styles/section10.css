@@ -66,7 +66,6 @@ footer {
 
 .img-show {
   margin: 0 auto;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   position: relative;
@@ -137,20 +136,13 @@ footer {
   left: 0;
   bottom: 0;
   width: 6px;
-  -webkit-animation-name: kf-arrow-anime;
-          animation-name: kf-arrow-anime;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-direction: normal;
-          animation-direction: normal;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-name: kf-arrow-anime;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
 }
 .hero__scrolltext {
   color: rgba(255, 255, 255, 0.7);
@@ -159,15 +151,6 @@ footer {
   left: -5px;
   top: 11px;
   font-size: 1.2em;
-}
-
-@-webkit-keyframes kf-arrow-anime {
-  0%, 50%, 100% {
-    transform: translateY(-10%);
-  }
-  30% {
-    transform: none;
-  }
 }
 
 @keyframes kf-arrow-anime {

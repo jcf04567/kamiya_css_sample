@@ -67,7 +67,6 @@ footer {
 
 .img-show, .section1-2__img-show, .section1-3__img-show, .section1-3-2__img-show, .section1-4__img-show, .section1-5__img-show, .section1-6__img-show, .section1-7__img-show, .section1-9__img-show, .section1-9-2__img-show, .section1-9-3__img-show, .section1-9-4__img-show, .section1-9-5__img-show, .section1-10__img-show {
   margin: 0 auto;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   position: relative;
@@ -149,6 +148,10 @@ footer {
 
 .section11.inview::before {
   transition: transform 1s 2.2s ease;
+}
+
+.section12.inview::before {
+  transition: transform 1s 2.4s ease;
 }
 
 .subunit1, .section1-12, .section1-11, .section1-10, .section1-9-5, .section1-9-4, .section1-9-3, .section1-9-2, .section1-9, .section1-8, .section1-7, .section1-6, .section1-5, .section1-4, .section1-3-2, .section1-3, .section1-2, .section1-1 {
@@ -1976,8 +1979,7 @@ footer {
 }
 
 .section4-5__layout {
-  -ms-scroll-snap-type: x mandatory;
-      scroll-snap-type: x mandatory;
+  scroll-snap-type: x mandatory;
   margin: 0 auto;
   padding: 30px 0;
   max-width: 800px;
@@ -2039,16 +2041,7 @@ footer {
   transform: rotate(45deg);
 }
 .section4-6__layout details[open] .answer {
-  -webkit-animation: fadeIn 0.5s ease;
-          animation: fadeIn 0.5s ease;
-}
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+  animation: fadeIn 0.5s ease;
 }
 @keyframes fadeIn {
   0% {
